@@ -44,7 +44,13 @@ select distinct album, artist
 from spotify
 order by 1
 ```   
-4. Get the total number of comments for tracks where licensed = TRUE.
+3. Get the total number of comments for tracks where licensed = TRUE.
+```sql
+select 
+       sum(comments) as total_comments
+from spotify
+where licensed = 'true'
+```
 5. Find all tracks that belong to the album type single .
 6. Count the total number of tracks by each artist.
 
