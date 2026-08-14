@@ -1,3 +1,4 @@
+SPOTIFY 
 <img width="1600" height="900" alt="spotify_logo" src="https://github.com/user-attachments/assets/d8bfd33d-4085-47b5-9f6e-c0b51ce4d21a" />
 
 **This project involves analyzing a Spotify dataset with various attributes about tracks, albums, and artists using SQL. It covers an end-to-end
