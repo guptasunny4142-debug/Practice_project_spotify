@@ -1,5 +1,3 @@
-![Uploading spotify_logo.jpg…]()
-
 **This project involves analyzing a Spotify dataset with various attributes about tracks, albums, and artists using SQL. It covers an end-to-end
 process of normalizing a denormalized dataset, performing SQL queries of varying complexity (easy, medium, and advanced), and optimizing
 query performance. The primary goals of the project are to practice advanced SQL skills and generate valuable insights from the dataset.**
@@ -53,8 +51,21 @@ select
 from spotify
 where licensed = 'true'
 ```
-5. Find all tracks that belong to the album type single .
-6. Count the total number of tracks by each artist.
+4. Find all tracks that belong to the album type single .
+```sql
+select track, album
+from spotify
+where album_type = 'single'
+```
+5. Count the total number of tracks by each artist.
+```sql
+select * from spotify
+select artist,
+       count(*) as total_no_songs
+from spotify
+group by 1
+order by 2
+```
 
 Medium Level
 
