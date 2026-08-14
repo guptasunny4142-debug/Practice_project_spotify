@@ -41,8 +41,8 @@ where stream > 1000000000
 2. List all albums along with their respective artists.
    ```sql
    select distinct album, artist 
-from spotify
-order by 1
+   from spotify
+   order by 1
    ```
 4. Get the total number of comments for tracks where licensed = TRUE.
 5. Find all tracks that belong to the album type single .
